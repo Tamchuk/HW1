@@ -3,7 +3,9 @@ public class Assignment01Q02 {
         double actualPi = Math.PI;
         double approxPi = 0;
 
-        for (int i = 0; i < Integer.parseInt(args[0]); i++) {
+        int limit = Integer.parseInt(args[0]);
+
+        for (int i = 0; i < limit; i++) {
             if (i % 2 == 0) {
                 approxPi += (1.0 / (2 * i + 1));
             } else {
